@@ -13,47 +13,47 @@
         margin: 0;
         background-color: #f4f4f4;
         background-image: url('https://i.imgur.com/UUrma2H.png');
-        background-size: cover; /* 使背景圖片覆蓋整個背景 */
+        background-size: cover;
     }
 
     form {
         background: white;
-        padding: 2em; /* 使用 em 單位 */
+        padding: 1.5em; /* 調整內邊距 */
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        max-width: 90%; /* 最大寬度為90% */
-        width: 400px; /* 基本寬度 */
+        max-width: 90%;
+        width: 400px;
     }
 
     h1 {
         text-align: center;
-        font-size: 1.8em;
+        font-size: 1.6em; /* 調整標題字體大小 */
     }
 
     label {
         display: block;
-        margin: 0.5em 0 0.3em; /* 使用 em 單位 */
-        font-size: 1.1em;
+        margin: 0.5em 0 0.3em;
+        font-size: 1em; /* 調整字體大小 */
     }
 
     input, select, textarea {
         width: 100%;
-        padding: 0.8em; /* 使用 em 單位 */
-        margin-bottom: 1em; /* 使用 em 單位 */
+        padding: 0.8em;
+        margin-bottom: 1.2em; /* 調整底部邊距 */
         border: 1px solid #ccc;
         border-radius: 4px;
-        font-size: 1em; /* 調整字體大小 */
+        font-size: 1em;
     }
 
     button {
         width: 100%;
-        padding: 0.8em; /* 使用 em 單位 */
+        padding: 0.8em;
         background-color: #007BFF;
         color: white;
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     button:hover {
@@ -63,11 +63,15 @@
     /* 媒體查詢 */
     @media (max-width: 600px) {
         form {
-            padding: 1em; /* 在小螢幕上減少內邊距 */
+            padding: 1em; /* 減少內邊距 */
         }
 
         h1 {
-            font-size: 1.5em; /* 調整標題大小 */
+            font-size: 1.4em; /* 調整標題大小 */
+        }
+
+        label, input, select, textarea, button {
+            font-size: 0.9em; /* 調整字體大小 */
         }
     }
 </style>
